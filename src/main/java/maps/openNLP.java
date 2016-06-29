@@ -53,7 +53,6 @@ public class openNLP {
         TokenNameFinderModel loc = new TokenNameFinderModel(new File("en-ner-location.bin"));
         TokenNameFinderModel org = new TokenNameFinderModel(new File("en-ner-organization.bin"));
         TokenNameFinderModel pers = new TokenNameFinderModel(new File("en-ner-person.bin"));
-        FileReader fileReader = new FileReader("/home/vladimir/first5snippets.txt");
 
         // Create a NameFinder using the model
         NameFinderME locF = new NameFinderME(loc);

@@ -21,5 +21,13 @@ public class Harness {
         }
         System.out.println(emails);
         System.out.println(input);
+
+        Pattern t = Pattern.compile("([01][- .])?(\\(\\d{3}\\)|\\d{3})[- .]?\\d{3}[- .]\\d{41}", Pattern.CASE_INSENSITIVE);
+        matcher = t.matcher(input);
+       while (matcher.find()) {
+           String ad = matcher.group();
+           System.out.println(ad);
+       }
+
     }
 }
