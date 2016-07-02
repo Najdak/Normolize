@@ -27,7 +27,7 @@ public class openNLP {
                         + " the E.C.B. as a sort of counterpart to the annual symposium held in Jackson"
                         + " Hole, Wyo., by the Federal Reserve Bank of Kansas City. "};*/
         String[] sentences = {
-                "Moscow Russia",
+                "",
                 "Del Mar Photonics, Inc. 4119 Twilight Ridge San Diego, CA 92130 tel: (858) 876-3133 fax: (858) 630-2376 Skype: delmarphotonics e-mail: ruksineanu@gmail.com",
                 "DEL MAR PHOTONICS 4119 Twilight Ridge San Diego, CA 92130 USA Tel::(858) 876-3133 Fax::(858) 630-2376 E-mail::optics@dmphotonics. com",
                 "DEL MAR PHOTONICS INC. 4119 Twilight Ridge San Diego, CA 92130 United States. Phone: (858) 876-3133 Fax: (858) 630-2376. Visit website. Product",

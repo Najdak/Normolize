@@ -5,6 +5,7 @@ import opennlp.tools.namefind.TokenNameFinderModel;
 import opennlp.tools.tokenize.SimpleTokenizer;
 import opennlp.tools.tokenize.Tokenizer;
 import opennlp.tools.util.Span;
+import opennlp.tools.util.StringList;
 
 import java.io.File;
 import java.io.IOException;
@@ -24,10 +25,11 @@ public class AdressExecutor {
     public static void main(String[] args) throws IOException {
         input.add("Del Mar Photonics, Inc. 4119 Twilight Ridge San Diego, CA 92130 tel: (858) 876-3133 fax: (858) 630-2376 Skype: delmarphotonics e-mail: ruksineanu@gmail.com");
         input.add("DEL MAR PHOTONICS 4119 Twilight Ridge San Diego, CA 92130 USA Tel::(858) 876-3133 Fax::(858) 630-2376 E-mail::optics@dmphotonics. com");
-        input.add("DEL MAR PHOTONICS INC. 4119 Twilight Ridge San Diego, CA 92130 United States. Phone: (858) 876-3133 Fax: (858) 630-2376. Visit website. Product");
+        input.add("DEL MAR PHOTONICS INC. Moscow Russia 4119 Twilight Ridge San Diego, CA 92130 United States. Phone: (858) 876-3133 Fax: (858) 630-2376. Visit website. Product");
         input.add("Del Mar Photonics, Inc. product portfolio includes ultrafast laser oscillators and amplifiers based on Ti:Sapphire, Cr:Forsterite, Er- and Yb- doped fibers;");
         input.add("Learn about working at Del Mar Photonics. Join LinkedIn today for free. See who you know at Del Mar Photonics, leverage your professional network, ");
         Pattern adressREGEX = Pattern.compile("\\d{2,5}$");
+        Pattern filterREGEX = Pattern.compile("[^\\w\\s\\d]");
         // Load the model file downloaded from OpenNLP
         // http://opennlp.sourceforge.net/models-1.5/
         TokenNameFinderModel loc = new TokenNameFinderModel(new File("en-ner-location.bin"));
@@ -42,19 +44,32 @@ public class AdressExecutor {
             String[] tokens = tokenizer.tokenize(sentence);
             // Find the names in the tokens and return Span objects
             Span[] locations = locF.find(tokens);
-            List<String> location = (Arrays.asList(Span.spansToStrings(locations, tokens)));
-            if (location != null && location.size() > 0) {
-                sentence = sentence.substring(0, sentence.indexOf(location.get(0).toString())).trim();
-                Matcher adressMatcher = adressREGEX.matcher(sentence);
-                String adress = "";
-               if (adressMatcher.find()) {
-                   adress = adressMatcher.group();
-                   adress += " " + location.toString();
-                   adress = adress.replaceAll("[(\\[)|(\\])|,]", "");
-               }
-                System.out.println("Результат с " + ++i + " сниппета: " + adress);
+            List<String> location = Arrays.asList(Span.spansToStrings(locations, tokens));
+            List<String> filtrLocation = new ArrayList<>();
+            filtrLocation.addAll(location);
+            for (String s : location) {
+                if (s.length()<3){filtrLocation.remove(s);
+                }else{
+                Matcher matcher = filterREGEX.matcher(s);
+                if (matcher.find()){filtrLocation.remove(s);
+                }
+            }}
+            String adress = "";
+            for (String fLoc : filtrLocation) {
+                if (fLoc != null && fLoc.length() > 0) {
+                    String sent = sentence.substring(0, sentence.indexOf(fLoc)).trim();
+                    Matcher adressMatcher = adressREGEX.matcher(sent);
+                    if (adressMatcher.find()) {
+                        adress = adressMatcher.group();
+                        adress += " " + fLoc;
+                        adress = adress.replaceAll("[(\\[)|(\\])|,]", "");
+                        System.out.println("Результат с " + (i+1) + " сниппета: " + adress);
 
+                    }
+                }
             }
+
+
         }
         System.out.println("FINISH");
 
