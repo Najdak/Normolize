@@ -36,7 +36,8 @@ public class AdressAPI {
 
             OutputStream os = connection.getOutputStream();
             BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
-            writer.write("DEL MAR PHOTONICS INC. Moscow Russia 4119 Twilight Ridge San Diego, CA 92130 United States. Phone: (858) 876-3133 Fax: (858) 630-2376. Visit website. Product");
+            String msg = "DEL MAR PHOTONICS INC. Moscow Russia 4119 Twilight Ridge San Diego, CA 92130 United States. Phone: (858) 876-3133 Fax: (858) 630-2376. Visit website. Product";
+            writer.write(msg.toLowerCase());
             writer.flush();
             writer.close();
             os.close();
@@ -50,7 +51,7 @@ public class AdressAPI {
                     response+=line;
                 }
             }else {
-                System.out.println("huitam");
+                System.out.println("Ошибочка!");
             }
             System.out.println(response);
 
@@ -61,7 +62,7 @@ public class AdressAPI {
                         .use("values", HashMap.class)
                         .deserialize(response);
             } catch (JSONException ex) {
-                System.out.println("hui");
+                System.out.println("Ошибочка!");
             }
 
 
