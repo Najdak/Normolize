@@ -32,8 +32,8 @@ public class AdressExecutor {
         textTokens.add("(800) 682-9680 · 1945 Gardena Ave Suite 100. Glendale, CA 91204 · Web Design, Marketing ... trendsetter! You could be the first review for USA Link System.");
         textTokens.add("5500 Campanile Drive San Diego, CA 92182 Tel: 619-594-5200 Copyright 2016");
 
-        Pattern adressREGEX = Pattern.compile("([\\d]{1,4})($)");
-        Pattern filterREGEX = Pattern.compile("[^\\w\\s\\d]|([T|t]el)");
+        Pattern adressREGEX = Pattern.compile("([\\d]{1,4})($)", Pattern.CASE_INSENSITIVE);
+        Pattern filterREGEX = Pattern.compile("[^\\w\\s\\d]|(Tel)", Pattern.CASE_INSENSITIVE);
         // Load the model file downloaded from OpenNLP
         // http://opennlp.sourceforge.net/models-1.5/
         TokenNameFinderModel loc = new TokenNameFinderModel(new File("en-ner-location.bin"));
