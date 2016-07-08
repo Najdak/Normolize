@@ -5,14 +5,12 @@ import flexjson.JSONException;
 
 import javax.net.ssl.HttpsURLConnection;
 import java.io.*;
+import java.lang.reflect.Array;
 import java.net.*;
 import java.nio.ByteBuffer;
 import java.nio.channels.Channels;
 import java.nio.channels.ReadableByteChannel;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.StringTokenizer;
+import java.util.*;
 
 /**
  * Created by dfyz on 02.07.2016.
@@ -55,9 +53,8 @@ public class AdressAPI {
             }
             System.out.println(response);
 
-            List<HashMap<String, Object>> data = null;
             try {
-                data = new JSONDeserializer<List<HashMap<String, Object>>>()
+                List<HashMap<String, Object>> data = new JSONDeserializer<List<HashMap<String, Object>>>()
                         .use(null, ArrayList.class)
                         .use("values", HashMap.class)
                         .deserialize(response);
