@@ -30,9 +30,10 @@ public class AdressExecutor {
         textTokens.add("(800) 682-9680 · 1945 Gardena Ave Suite 100. Glendale, CA 91204 · Web Design, Marketing ... trendsetter! You could be the first review for USA Link System.");
         textTokens.add("5500 Campanile Drive San Diego, CA 92182 Tel: 619-594-5200 Copyright 2016");
         textTokens.add("USO San Diego - Neil Ash Airport Center. 0 Reviews. 3707 North Harbor Dr, Terminal 1, Lindbergh Field, San Diego, CA 92101; Add Photo. Add Review. Get Directions. Phone");
+        textTokens.add("Isearch is open-source text retrieval software first developed in 1994 by Nassib Nassar as part of the Isite Z39. 50 information framework. The project");
         Pattern numREGEX = Pattern.compile("([\\d]{1,4})($)", Pattern.CASE_INSENSITIVE);
         Pattern filterREGEX = Pattern.compile("[^\\w\\s\\d]|(Tel)", Pattern.CASE_INSENSITIVE);
-        Pattern addressREGEX = Pattern.compile("([0-9]{4})([^0-9]{4}.*)([A-Z]{2}\\s{1,5}[0-9]{5})", Pattern.CASE_INSENSITIVE);
+        Pattern addressREGEX = Pattern.compile("([0-9]{3,4})([^0-9]{4}.*)([A-Z]{2}\\s{1,5}[0-9]{5})", Pattern.CASE_INSENSITIVE);
         // Load the model file downloaded from OpenNLP
         // http://opennlp.sourceforge.net/models-1.5/
         TokenNameFinderModel loc = new TokenNameFinderModel(new File("en-ner-location.bin"));
