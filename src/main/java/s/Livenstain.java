@@ -6,8 +6,8 @@ package s;
 public class Livenstain {
 
     public static void main(String[] args) {
-        String s1 = "mamahgf";
-        String s2 = "papa";
+        String s1 = "4119 Twilight Ridge San Diego";
+        String s2 = "4119 Twilight Ridge | San Diego, CA 92130";
         int l = editdist(s1,s2);
         System.out.println(l);
     }

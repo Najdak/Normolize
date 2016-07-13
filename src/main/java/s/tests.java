@@ -9,11 +9,11 @@ import java.util.Map;
 public class tests {
 
     public static void main(String[] args) {
-        String h = hui()!= null ? hui() : null;
-        System.out.println(h);
+        String s = " aaaaabaa     b    ";
+        System.out.println("GO");
+        s = s.trim().replaceAll("b", "");
+
+        System.out.println(s);
     }
 
-    public static String hui (){
-        return null;
-    }
 }
