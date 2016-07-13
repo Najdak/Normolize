@@ -34,7 +34,7 @@ public class AdressAPI {
 
             OutputStream os = connection.getOutputStream();
             BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
-            String msg = "DEL MAR PHOTONICS INC. Moscow Russia 4119 Twilight Ridge San Diego, CA 92130 United States. Phone: (858) 876-3133 Fax: (858) 630-2376. Visit website. Product";
+            String msg = "IzSearch. com is hosted in Carlsbad, California, US at 70. 167. 8. 45 and expires on 2025-02-09. View full info on IzSearch. com's WHOIS and domain…";
             writer.write(msg.toLowerCase());
             writer.flush();
             writer.close();

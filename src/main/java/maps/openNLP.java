@@ -46,7 +46,8 @@ public class openNLP {
                 "We are a traditional Montessori school located in beautiful San Diego, CA with programs for children in Preschool . . . 2640 Soderblom Ave San Diego",
                 "Learn more about MISSION BAY MONTESSORI ACADEMY, a school located in San Diego, . . . 2640 SODERBLOM AVE SAN DIEGO",
                 "Mission Bay Montessori Academy. . . . San Diego schools — Mission Bay Montessori Academy is located at 2640 Soderblom Ave, San Diego CA 92122.",
-                };
+
+        };
 
         // Load the model file downloaded from OpenNLP
         // http://opennlp.sourceforge.net/models-1.5/

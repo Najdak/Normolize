@@ -20,6 +20,7 @@ public class SnipInfo {
         textTokens.add("5500 Campanile Drive San Diego, CA 92182 Tel: 619-594-5200 Copyright 2016");
         textTokens.add("USO San Diego - Neil Ash Airport Center. 0 Reviews. 3707 North Harbor Dr, Terminal 1, Lindbergh Field, San Diego, CA 92101; Add Photo. Add Review. Get Directions. Phone");
         textTokens.add("Isearch is open-source text retrieval software first developed in 1994 by Nassib Nassar as part of the Isite Z39. 50 information framework. The project");
+        textTokens.add("IZSEARCH - write and read reviews and find this brand information for products/services associated with the IZSEARCH ... IZSEARCH, INC. Carlsbad, CA 92008. ");
         Pattern e_mail = Pattern.compile("\\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,4}\\b", Pattern.CASE_INSENSITIVE);
         Pattern tel = Pattern.compile("tel([:]{1,2})\\(*\\+*[1-9]{0,3}\\)*-*[1-9]{0,3}[-. /]*\\(*[2-9]\\d{2}\\)*[-. /]*\\d{3}[-. /]*\\d{4} *e*x*t*\\.* *\\d{0,4}", Pattern.CASE_INSENSITIVE);
         Pattern fax = Pattern.compile("fax([:]{1,2})\\(*\\+*[1-9]{0,3}\\)*-*[1-9]{0,3}[-. /]*\\(*[2-9]\\d{2}\\)*[-. /]*\\d{3}[-. /]*\\d{4} *e*x*t*\\.* *\\d{0,4}", Pattern.CASE_INSENSITIVE);
@@ -80,10 +81,8 @@ public class SnipInfo {
                 hit = Collections.synchronizedMap(stringListMap);
             }
         }
-        int i = 1;
         for (Map<String, List<String>> stringListMap : result) {
-            System.out.println("____________________________\n" +i +" Сниппет ");
-            i++;
+            System.out.println("____________________________\n"+" Сниппет ");
             for (List<String> list : stringListMap.values()) {
                 for (String s : list) {
                     System.out.println("           " + s);

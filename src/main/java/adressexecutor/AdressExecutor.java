@@ -30,10 +30,13 @@ public class AdressExecutor {
         textTokens.add("(800) 682-9680 · 1945 Gardena Ave Suite 100. Glendale, CA 91204 · Web Design, Marketing ... trendsetter! You could be the first review for USA Link System.");
         textTokens.add("5500 Campanile Drive San Diego, CA 92182 Tel: 619-594-5200 Copyright 2016");
         textTokens.add("USO San Diego - Neil Ash Airport Center. 0 Reviews. 3707 North Harbor Dr, Terminal 1, Lindbergh Field, San Diego, CA 92101; Add Photo. Add Review. Get Directions. Phone");
-        textTokens.add("USO San Diego - Neil Ash Airport Center. 0 Reviews. 3707 North Harbor Dr, Terminal 1, Lindbergh Field, ... Meeting Center Community volunteer service opportunities ");
-        Pattern numREGEX = Pattern.compile("([\\d]{1,4})($)", Pattern.CASE_INSENSITIVE);
+        textTokens.add("Isearch is open-source text retrieval software first developed in 1994 by Nassib Nassar as part of the Isite Z39. 50 information framework. The project");
+        textTokens.add("IZSEARCH - write and read reviews and find this brand information for products/services associated with the IZSEARCH ... IZSEARCH, INC. Carlsbad, CA 92008. ");
+
+        Pattern homeCode = Pattern.compile("([\\d]{1,4})($)", Pattern.CASE_INSENSITIVE);
         Pattern filterREGEX = Pattern.compile("[^\\w\\s\\d]|(Tel)", Pattern.CASE_INSENSITIVE);
-        Pattern addressREGEX = Pattern.compile("([0-9]{4})([^0-9]{4}.*)([A-Z]{2}\\s{1,5}[0-9]{5})", Pattern.CASE_INSENSITIVE);
+        Pattern addressREGEX = Pattern.compile("([0-9]{3,4})([^0-9]{4}.*)([A-Z]{2}\\s{1,5}[0-9]{5})", Pattern.CASE_INSENSITIVE);
+        Pattern sityStateREG = Pattern.compile("(\\w*?([,|\\s]{1,2}))([A-Z]{2})([\\s]{1,3})([0-9]{5})");
         // Load the model file downloaded from OpenNLP
         // http://opennlp.sourceforge.net/models-1.5/
         TokenNameFinderModel loc = new TokenNameFinderModel(new File("en-ner-location.bin"));
@@ -41,13 +44,19 @@ public class AdressExecutor {
         NameFinderME locF = new NameFinderME(loc);
 
         Tokenizer tokenizer = SimpleTokenizer.INSTANCE;
-        List<String> results = new ArrayList<>();
+        List<String> nlpResult = new ArrayList<>();
         List<String> regResult = new ArrayList<>();
+        List<String> sityStateResult = new ArrayList<>();
         for (int i = 0; i < textTokens.size(); i++) {
             String sentence = textTokens.get(i);
+
             Matcher regAddress = addressREGEX.matcher(sentence);
             while (regAddress.find()){
-                regResult.add(regAddress.group());
+                regResult.add(i+1 + " snippet:____ "+ regAddress.group());
+            }
+            Matcher cityStateM = sityStateREG.matcher(sentence);
+            while (cityStateM.find()){
+                sityStateResult.add(i+1 + " snippet:____ "+ cityStateM.group());
             }
             // Split the sentence into tokens
             String[] tokens = tokenizer.tokenize(sentence);
@@ -57,7 +66,7 @@ public class AdressExecutor {
 
             List<String> location = Arrays.asList(Span.spansToStrings(locations, tokens));
 
-            if (locations != null && locations.length > 0) {
+            if (locations != null && locations.length > 1) {
                 List<String> filtrLocation = new ArrayList<>();
                 filtrLocation.addAll(location);
                 for (String s : location) {
@@ -74,12 +83,12 @@ public class AdressExecutor {
                 for (String fLoc : filtrLocation) {
                     if (fLoc != null) {
                         String sent = sentence.substring(0, sentence.indexOf(fLoc));
-                        Matcher adressMatcher = numREGEX.matcher(sent.trim());
+                        Matcher adressMatcher = homeCode.matcher(sent.trim());
                         if (adressMatcher.find()) {
                             address = adressMatcher.group();
                             address += " " + fLoc;
                             address = address.replaceAll("[(\\[)|(\\])|,]", "");
-                            results.add(address.trim());
+                            nlpResult.add(i+1 + " snippet:____ "+address.trim());
 
                         }
                     }
@@ -88,12 +97,15 @@ public class AdressExecutor {
 
             }
         }
-        Collections.replaceAll(regResult, ",", "");
-        for (String result : results) {
+        for (String result : nlpResult) {
             System.out.println("OpenNLP:        " + result);
 
         }
         for (String s : regResult) {
             System.out.println("REGEX:          "+ s);
-        }    }
+        }
+        for (String s : sityStateResult) {
+            System.out.println("Sity State:     "+ s);
+        }
+    }
     }
