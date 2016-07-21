@@ -17,7 +17,7 @@ import java.util.*;
  */
 public class openNLP {
     public static void main(String[] args) throws InvalidFormatException, IOException {
-
+        double asdas = System.currentTimeMillis();
 
        /* String[] sentences = {
                 "If President John F. Kennedy, after visiting France in 1961 with his immensely popular wife,"
@@ -73,6 +73,9 @@ public class openNLP {
             Span[] persons = persF.find(tokens);
             System.out.print("Локации: " + Arrays.toString(Span.spansToStrings(locations, tokens)));
             System.out.println(" Организации: " + Arrays.toString(Span.spansToStrings(organizations, tokens)));
+
         }
+        System.out.println(asdas = System.currentTimeMillis() - asdas);
+
     }
 }
