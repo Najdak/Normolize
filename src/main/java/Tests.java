@@ -1,13 +1,40 @@
+import com.sun.deploy.util.StringUtils;
+import com.sun.xml.internal.bind.v2.runtime.unmarshaller.XsiNilLoader;
+
+import java.util.*;
+
+import static java.util.Arrays.asList;
+
 public class Tests {
+
     public static void main(String[] args) {
-        double asdas = System.currentTimeMillis();
-        Tests t = new Tests();
-        int d = t.num(3, 5);
-        System.out.println(d);
-        System.out.println(asdas = System.currentTimeMillis() - asdas);
+        Map<Integer, String> map = new TreeMap<>();
+        Integer i = 3;
+        map.put(3, "hui");
+        map.put(6, "pizda");
+        map.put(1, "vagaina");
+        System.out.println(map.containsKey(3));
+        for (Map.Entry<Integer, String> integerStringEntry : map.entrySet()) {
+            System.out.println(integerStringEntry.getKey() + " "+integerStringEntry.getValue());
+        }
+        String s="I love this phone, its super fast and there's so much new and cool things with jelly bean....but of recently I've seen some bugs.";
+        Set<String> aa = Tests.deleteStopWords(s);
+        System.out.println(aa);
     }
 
-    private int num(int i1, int i2){
-        return i1-i2;
+    /**
+     * Delete all Stop Words from String
+     * @param s edited line
+     * @return  List<String> without StopWords
+     */
+    public static Set<String> deleteStopWords(String s){
+        Set<String> stopwords = new HashSet<>(Arrays.asList("a", "about", "above", "above", "across", "after", "afterwards", "again", "against", "all", "almost", "alone", "along", "already", "also","although","always","am","among", "amongst", "amoungst", "amount",  "an", "and", "another", "any","anyhow","anyone","anything","anyway", "anywhere", "are", "around", "as",  "at", "back","be","became", "because","become","becomes", "becoming", "been", "before", "beforehand", "behind", "being", "below", "beside", "besides", "between", "beyond", "bill", "both", "bottom","but", "by", "call", "can", "cannot", "cant", "co", "con", "could", "couldnt", "cry", "de", "describe", "detail", "do", "done", "down", "due", "during", "each", "eg", "eight", "either", "eleven","else", "elsewhere", "empty", "enough", "etc", "even", "ever", "every", "everyone", "everything", "everywhere", "except", "few", "fifteen", "fify", "fill", "find", "fire", "first", "five", "for", "former", "formerly", "forty", "found", "four", "from", "front", "full", "further", "get", "give", "go", "had", "has", "hasnt", "have", "he", "hence", "her", "here", "hereafter", "hereby", "herein", "hereupon", "hers", "herself", "him", "himself", "his", "how", "however", "hundred", "ie", "if", "in", "inc", "indeed", "interest", "into", "is", "it", "its", "itself", "keep", "last", "latter", "latterly", "least", "less", "ltd", "made", "many", "may", "me", "meanwhile", "might", "mill", "mine", "more", "moreover", "most", "mostly", "move", "much", "must", "my", "myself", "name", "namely", "neither", "never", "nevertheless", "next", "nine", "no", "nobody", "none", "noone", "nor", "not", "nothing", "now", "nowhere", "of", "off", "often", "on", "once", "one", "only", "onto", "or", "other", "others", "otherwise", "our", "ours", "ourselves", "out", "over", "own","part", "per", "perhaps", "please", "put", "rather", "re", "same", "see", "seem", "seemed", "seeming", "seems", "serious", "several", "she", "should", "show", "side", "since", "sincere", "six", "sixty", "so", "some", "somehow", "someone", "something", "sometime", "sometimes", "somewhere", "still", "such", "system", "take", "ten", "than", "that", "the", "their", "them", "themselves", "then", "thence", "there", "thereafter", "thereby", "therefore", "therein", "thereupon", "these", "they", "thickv", "thin", "third", "this", "those", "though", "three", "through", "throughout", "thru", "thus", "to", "together", "too", "top", "toward", "towards", "twelve", "twenty", "two", "un", "under", "until", "up", "upon", "us", "very", "via", "was", "we", "well", "were", "what", "whatever", "when", "whence", "whenever", "where", "whereafter", "whereas", "whereby", "wherein", "whereupon", "wherever", "whether", "which", "while", "whither", "who", "whoever", "whole", "whom", "whose", "why", "will", "with", "within", "without", "would", "yet", "you", "your", "yours", "yourself", "yourselves", "the"));
+        Set<String> listOfStrings = new TreeSet<>(asList(s.split("\\s{1,3}|,\\s")));
+        listOfStrings.removeAll(stopwords);
+       // StringUtils.join(listOfStrings, " ");
+
+        return listOfStrings;
     }
+
+
 }

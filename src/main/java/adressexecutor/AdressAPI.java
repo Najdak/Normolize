@@ -52,9 +52,9 @@ public class AdressAPI {
                 System.out.println("Ошибочка!");
             }
             System.out.println(response);
-
+            List<HashMap<String, Object>> data;
             try {
-                List<HashMap<String, Object>> data = new JSONDeserializer<List<HashMap<String, Object>>>()
+                data = new JSONDeserializer<List<HashMap<String, Object>>>()
                         .use(null, ArrayList.class)
                         .use("values", HashMap.class)
                         .deserialize(response);
