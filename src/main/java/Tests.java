@@ -1,6 +1,3 @@
-import com.sun.deploy.util.StringUtils;
-import com.sun.xml.internal.bind.v2.runtime.unmarshaller.XsiNilLoader;
-
 import java.util.*;
 
 import static java.util.Arrays.asList;
@@ -20,6 +17,9 @@ public class Tests {
         String s="I love this phone, its super fast and there's so much new and cool things with jelly bean....but of recently I've seen some bugs.";
         Set<String> aa = Tests.deleteStopWords(s);
         System.out.println(aa);
+        Map<String, Object> returnMap = returnMap("vasea");
+        System.out.println(returnMap);
+        LinkedList<String> stringsList = (LinkedList<String>) returnMap.get("map");
     }
 
     /**
@@ -35,6 +35,19 @@ public class Tests {
 
         return listOfStrings;
     }
-
+    public static Map<String, Object> returnMap(String s){
+        Map<String, Object> result = new HashMap<>();
+List<String> list = new LinkedList<>();
+        list.add("sdads");
+        list.add("sdadsdas");
+        list.add("sdadfdsgs");
+        list.add("sdadgdfgdfs");
+        Integer i = 4777777;
+        String s1 = s;
+        result.put("Integer", i);
+        result.put("String", s);
+        result.put("map", list);
+        return result;
+    }
 
 }
