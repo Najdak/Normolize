@@ -20,6 +20,10 @@ public class Tests {
         Map<String, Object> returnMap = returnMap("vasea");
         System.out.println(returnMap);
         LinkedList<String> stringsList = (LinkedList<String>) returnMap.get("map");
+
+
+        String[] itfqs = s.split("\\s{1,2}|,\\s");
+        List<String> infoTokensForQueryScore = new ArrayList<>(Arrays.asList(itfqs));
     }
 
     /**
