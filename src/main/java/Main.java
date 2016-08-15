@@ -2,6 +2,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 import org.apache.log4j.Logger;
+import org.apache.log4j.spi.LoggerFactory;
 import s.*;
 
 /**
@@ -9,15 +10,17 @@ import s.*;
  */
 public class Main {
 
+    private static final Logger LOGGER = Logger.getLogger(Main.class);
 
     public static void main(String[] args) {
 
         float kToken = (float) 7 / (float) 10;
-        System.out.printf("%.3f%n", kToken);
+        LOGGER.info(" dad" + kToken);
         System.out.println(String.format("%.3f%n", kToken));
        Set<String> infoTokens = normalizeWords(StrUtils.getTokens("bouches-du-rhone, metropolitan, provence-alpes-cote, marseille, bouches-du-rhône, d'azur, france, provence-alpes-côte"));
        // Set<String> infoTokens = normalizeWords(StrUtils.getTokens("Tĥïŝ ĩš â fůňķŷ Šťŕĭńġ"));
-        System.out.println(infoTokens);
+
+        LOGGER.info(infoTokens);
     }
 
     public static Set<String> normalizeWords(Set<String> words) {

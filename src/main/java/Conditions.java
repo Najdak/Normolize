@@ -1,3 +1,10 @@
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -8,6 +15,8 @@ import java.util.StringTokenizer;
  */
 public class Conditions {
     public static void main(String[] args) {
+
+        String text1 = ApplicationProperties.TEXT1;
 
         Float integer[] = {7.69F,7.69F,7.69F,7.69F,7.69F,5.77F};
 
@@ -26,5 +35,23 @@ public class Conditions {
                 queryTokens.add(q[i]);
             }}
 
+    }
+
+    public static List<String> readRows(String fileName) {
+        List<String> rows = new ArrayList<>();
+        try {
+            rows.addAll(Files.readAllLines(Paths.get(fileName), StandardCharsets.UTF_8));
+        } catch (IOException e) {
+             e.getMessage();
+        }
+        return rows;
+    }
+
+    public static void writeRowsToFile(String filePath, List<String> rows) throws FileNotFoundException, UnsupportedEncodingException {
+        PrintWriter writer = new PrintWriter(filePath, "UTF-8");
+        for(String row : rows) {
+            writer.println(row);
+        }
+        writer.close();
     }
 }
