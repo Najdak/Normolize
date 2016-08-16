@@ -13,7 +13,8 @@ public class Main {
     private static final Logger LOGGER = Logger.getLogger(Main.class);
 
     public static void main(String[] args) {
-
+        String s = "aaa";
+        System.out.println(s.replace("b", "t"));
         float kToken = (float) 7 / (float) 10;
         LOGGER.info(" dad" + kToken);
         System.out.println(String.format("%.3f%n", kToken));
