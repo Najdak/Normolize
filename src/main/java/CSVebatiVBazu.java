@@ -45,7 +45,7 @@ public class CSVebatiVBazu {
 			}
 		}
 
-
+		connection.close();
 
 	}
 
@@ -56,6 +56,7 @@ public class CSVebatiVBazu {
 		stm.setInt(2, id);
 		stm.executeUpdate();
 		connection.commit();
+		stm.close();
 		System.out.println(id + "URL UAPDATED");
 	}
 	public static void Delete(int id) throws SQLException {
@@ -64,6 +65,7 @@ public class CSVebatiVBazu {
 		stm.setInt(1, id);
 		stm.execute();
 		connection.commit();
+		stm.close();
 		System.out.println(id + "DELETED");
 	}
 	public static List<String> readRows(String fileName) {
