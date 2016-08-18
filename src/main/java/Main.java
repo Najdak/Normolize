@@ -13,7 +13,9 @@ public class Main {
     private static final Logger LOGGER = Logger.getLogger(Main.class);
 
     public static void main(String[] args) {
-        String s = "aaa";
+        String s = "/fave-controller-music.html";
+        String spl = s.substring(s.lastIndexOf("-")+1, s.lastIndexOf("."));
+        System.out.println(spl);
         System.out.println(s.replace("b", "t"));
         float kToken = (float) 7 / (float) 10;
         LOGGER.info(" dad" + kToken);
