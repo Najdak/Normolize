@@ -1,0 +1,302 @@
+/usr/lib/jvm/java-7-oracle/bin/java -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:35754,suspend=y,server=n -Dfile.encoding=UTF-8 -classpath /usr/lib/jvm/java-7-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-7-oracle/jre/lib/deploy.jar:/usr/lib/jvm/java-7-oracle/jre/lib/ext/dnsns.jar:/usr/lib/jvm/java-7-oracle/jre/lib/ext/localedata.jar:/usr/lib/jvm/java-7-oracle/jre/lib/ext/sunec.jar:/usr/lib/jvm/java-7-oracle/jre/lib/ext/sunjce_provider.jar:/usr/lib/jvm/java-7-oracle/jre/lib/ext/sunpkcs11.jar:/usr/lib/jvm/java-7-oracle/jre/lib/ext/zipfs.jar:/usr/lib/jvm/java-7-oracle/jre/lib/javaws.jar:/usr/lib/jvm/java-7-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-7-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-7-oracle/jre/lib/jfxrt.jar:/usr/lib/jvm/java-7-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-7-oracle/jre/lib/management-agent.jar:/usr/lib/jvm/java-7-oracle/jre/lib/plugin.jar:/usr/lib/jvm/java-7-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-7-oracle/jre/lib/rt.jar:/home/vladimir/Projects/Normalize/target/classes:/home/vladimir/.m2/repository/postgresql/postgresql/9.1-901-1.jdbc4/postgresql-9.1-901-1.jdbc4.jar:/home/vladimir/.m2/repository/org/apache/poi/poi/3.12/poi-3.12.jar:/home/vladimir/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar:/home/vladimir/.m2/repository/org/apache/poi/poi-ooxml/3.12/poi-ooxml-3.12.jar:/home/vladimir/.m2/repository/org/apache/poi/poi-ooxml-schemas/3.12/poi-ooxml-schemas-3.12.jar:/home/vladimir/.m2/repository/org/apache/xmlbeans/xmlbeans/2.6.0/xmlbeans-2.6.0.jar:/home/vladimir/.m2/repository/stax/stax-api/1.0.1/stax-api-1.0.1.jar:/home/vladimir/.m2/repository/org/htmlparser/htmlparser/2.1/htmlparser-2.1.jar:/home/vladimir/.m2/repository/org/htmlparser/htmllexer/2.1/htmllexer-2.1.jar:/home/vladimir/.m2/repository/org/apache/opennlp/opennlp-tools/1.6.0/opennlp-tools-1.6.0.jar:/home/vladimir/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar:/home/vladimir/.m2/repository/junit/junit/4.10/junit-4.10.jar:/home/vladimir/.m2/repository/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar:/home/vladimir/.m2/repository/org/json/json/20090211/json-20090211.jar:/home/vladimir/.m2/repository/net/sf/flexjson/flexjson/3.3/flexjson-3.3.jar:/home/vladimir/.m2/repository/org/jsoup/jsoup/1.8.1/jsoup-1.8.1.jar:/home/vladimir/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/opt/idea-IU-145.597.3/lib/idea_rt.jar CSVebatiVBazu
+Connected to the target VM, address: '127.0.0.1:35754', transport: 'socket'
+Строка c ID: 2 service_name изменен c [Freiheit statt Angst] на [Freiheit statt Angst]
+Строка c ID: 43НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 61 service_name изменен c [Envato Maker] на [Envato Maker]
+Строка c ID: 63 service_name изменен c [Ada Conformity Assessment Authority] на [Ada Conformity Assessment Authority]
+Строка c ID: 98 service_name изменен c [Datasheet Catalog] на [Datasheet Catalog]
+Строка c ID: 101 service_name изменен c [AJATT | All Japanese All the Time] на [AJATT | All Japanese All the Time]
+Строка c ID: 122 service_name изменен c [THE WALL STREET JOURNAL] на [THE WALL STREET JOURNAL]
+Строка c ID: 133 service_name изменен c [Amazon] на [Amazon]
+Строка c ID: 134 service_name изменен c [Amazon] на [Amazon]
+Строка c ID: 135 service_name изменен c [Amazon] на [Amazon]
+Строка c ID: 136 service_name изменен c [Amazon] на [Amazon]
+Строка c ID: 137 service_name изменен c [Amazon] на [Amazon]
+Строка c ID: 138 service_name изменен c [Amazon MP3 Store] на [Amazon]
+Строка c ID: 139 service_name изменен c [Amazon MP3 Store] на [Amazon]
+Строка c ID: 142 service_name изменен c [Amazon Smile] на [Amazon]
+Строка c ID: 144 service_name изменен c [Amazon Smile] на [Amazon]
+Строка c ID: 141 service_name изменен c [Amazon Smile] на [Amazon]
+Строка c ID: 140 service_name изменен c [Amazon Smile] на [Amazon]
+Строка c ID: 145 service_name изменен c [Amazon UK Kindle] на [Amazon]
+Строка c ID: 148 service_name изменен c [Amazon.ca] на [Amazon]
+Строка c ID: 146 service_name изменен c [Amazon.ca] на [Amazon]
+Строка c ID: 147 service_name изменен c [Amazon.ca] на [Amazon]
+Строка c ID: 151 service_name изменен c [Amazon.cn] на [Amazon]
+Строка c ID: 150 service_name изменен c [Amazon.cn] на [Amazon]
+Строка c ID: 149 service_name изменен c [Amazon.cn] на [Amazon]
+Строка c ID: 152 service_name изменен c [Amazon.co.jp] на [Amazon]
+Строка c ID: 153 service_name изменен c [Amazon.co.jp] на [Amazon]
+Строка c ID: 154 service_name изменен c [Amazon.co.jp] на [Amazon]
+Строка c ID: 157 service_name изменен c [Amazon.co.uk] на [Amazon]
+Строка c ID: 156 service_name изменен c [Amazon.co.uk] на [Amazon]
+Строка c ID: 155 service_name изменен c [Amazon.co.uk] на [Amazon]
+Строка c ID: 158 service_name изменен c [Amazon.co.uk] на [Amazon]
+Строка c ID: 159 service_name изменен c [Amazon.co.uk MP3] на [Amazon]
+Строка c ID: 161 service_name изменен c [Amazon.com] на [Amazon]
+Строка c ID: 160 service_name изменен c [Amazon.com] на [Amazon]
+Строка c ID: 165 service_name изменен c [Amazon.com] на [Amazon]
+Строка c ID: 162 service_name изменен c [Amazon.com] на [Amazon]
+Строка c ID: 168 service_name изменен c [Amazon.com] на [Amazon]
+Строка c ID: 168 service_name изменен c [Amazon] на [Amazon]
+Строка c ID: 168 service_name изменен c [Amazon] на [Amazon]
+Строка c ID: 168 service_name изменен c [Amazon] на [Amazon]
+Строка c ID: 168 service_name изменен c [Amazon] на [Amazon]
+Строка c ID: 168 service_name изменен c [Amazon] на [Amazon]
+Строка c ID: 168 service_name изменен c [Amazon] на [Amazon]
+Строка c ID: 168 service_name изменен c [Amazon] на [Amazon]
+Строка c ID: 168 service_name изменен c [Amazon] на [Amazon]
+Строка c ID: 168 service_name изменен c [Amazon] на [Amazon]
+Строка c ID: 168 service_name изменен c [Amazon] на [Amazon]
+Строка c ID: 168 service_name изменен c [Amazon] на [Amazon]
+Строка c ID: 168 service_name изменен c [Amazon] на [Amazon]
+Строка c ID: 168 service_name изменен c [Amazon] на [Ask MetaFilter]
+Строка c ID: 168 service_name изменен c [Ask MetaFilter] на [Amazon]
+Строка c ID: 168 service_name изменен c [Amazon] на [Amazon]
+Строка c ID: 168 service_name изменен c [Amazon] на [Amazon]
+Строка c ID: 168 service_name изменен c [Amazon] на [Amazon]
+Строка c ID: 168 service_name изменен c [Amazon] на [Amazon]
+Строка c ID: 4518 service_name изменен c [Amazonaws] на [Amazon Web Services]
+Строка c ID: 4703 service_name изменен c [Angus Libraries Catalogue] на [Angus Libraries]
+Строка c ID: 4717 service_name изменен c [Anisearch.De] на [Anisearch]
+Строка c ID: 4718 service_name изменен c [AniTube] на [XPG]
+Строка c ID: 230НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 283НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 284НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 290 service_name изменен c [Augensound.De Art Galery] на [Augensound.De]
+Строка c ID: 297НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 299НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 4579НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 309НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 333НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 343НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 4521 service_name изменен c [Bbc] на [BBC]
+Строка c ID: 345 service_name изменен c [BBC Food] на [BBC]
+Строка c ID: 347 service_name изменен c [BBC GCSE Bitesize] на [BBC]
+Строка c ID: 346 service_name изменен c [BBC GCSE Bitesize] на [BBC]
+Строка c ID: 348 service_name изменен c [BBC Sport] на [BBC]
+Строка c ID: 349 service_name изменен c [BBC Weather] на [BBC]
+Строка c ID: 350 service_name изменен c [BBC.co.uk] на [BBC]
+Строка c ID: 370 service_name изменен c [Best Current Practices] на [IETF]
+Строка c ID: 373НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 381НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 387 service_name изменен c [Bibliothèques de l'Université Libre de Bruxelles] на [CIBLE]
+Строка c ID: 399 service_name изменен c [Bing Images] на [Bing]
+Строка c ID: 398 service_name изменен c [Bing Images] на [Bing]
+Строка c ID: 400 service_name изменен c [Bing Images] на [Bing]
+Строка c ID: 402 service_name изменен c [Bing Maps] на [Bing]
+Строка c ID: 403 service_name изменен c [Bing Maps] на [Bing]
+Строка c ID: 401 service_name изменен c [Bing Maps] на [Bing]
+Строка c ID: 404 service_name изменен c [Bing Netherlands] на [Bing]
+Строка c ID: 405 service_name изменен c [Bing News] на [Bing]
+Строка c ID: 406 service_name изменен c [Bing Shopping] на [Bing]
+Строка c ID: 407 service_name изменен c [Bing Social] на [Bing]
+Строка c ID: 408 service_name изменен c [Bing Translator] на [Bing]
+Строка c ID: 409 service_name изменен c [Bing Videos] на [Bing]
+Строка c ID: 410 service_name изменен c [Bing Videos] на [Bing]
+Строка c ID: 411 service_name изменен c [Bing Videos] на [Bing]
+Строка c ID: 412 service_name изменен c [Bing Weather] на [Bing]
+Строка c ID: 416 service_name изменен c [Biography.com] на [Bio.]
+Строка c ID: 4559 service_name изменен c [Bitauto] на [Cheyisou]
+Строка c ID: 431 service_name изменен c [Blekko Images] на [Blekko]
+Строка c ID: 437 service_name изменен c [Blip.tv] на [Maker.tv]
+Строка c ID: 4513 service_name изменен c [Blogspot] на [Google]
+Строка c ID: 459 service_name изменен c [Bogleheads Wiki] на [Google]
+Строка c ID: 464 service_name изменен c [Bom Negócio] на [OLX]
+Строка c ID: 510 service_name изменен c [Business Week] на [Bloomberg]
+Строка c ID: 517НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 518 service_name изменен c [Cablegatesearch] на [WikiLeaks]
+Строка c ID: 527 service_name изменен c [Calvin And Hobbes] на [Michael Yingling]
+Строка c ID: 528 service_name изменен c [Calvin and Hobbes Search Engine] на [Michael Yingling]
+Строка c ID: 554 service_name изменен c [CBS Sports] на [SportsLine]
+Строка c ID: 576НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 4731НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 596 service_name изменен c [Choral Public Domain Library] на [ChoralWiki]
+Строка c ID: 623 service_name изменен c [ClojureDocs BR] на [Clipstijl]
+Строка c ID: 640 service_name изменен c [Code Project] на [ICD Code]
+Строка c ID: 641 service_name изменен c [Code Suche] на [ICD Code]
+Строка c ID: 701 service_name изменен c [Cowboy Lyrics] на [Coursera]
+Строка c ID: 4747 service_name изменен c [CryptoThrift] на [Bitify]
+Строка c ID: 4749 service_name изменен c [CSS] на [Mozilla Developer Network]
+Строка c ID: 747 service_name изменен c [Cuánto Cabrón] на [Cuanto Cabron]
+Строка c ID: 777 service_name изменен c [Databáze her] на [Databaze her]
+Строка c ID: 793 service_name изменен c [DDG Safesearch On] на [DuckDuckGo]
+Строка c ID: 792 service_name изменен c [DDG Safesearch On] на [DuckDuckGo]
+Строка c ID: 797 service_name изменен c [DealBook] на [NYTimes]
+Строка c ID: 815НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 834 service_name изменен c [Den Danske Ordbog] на [Ordnet.dk]
+Строка c ID: 833 service_name изменен c [Den Danske Ordbog] на [Ordnet.dk]
+Строка c ID: 865 service_name изменен c [Diccionario de la lengua española] на [Diccionario de la lengua espanola]
+Строка c ID: 864 service_name изменен c [Diccionario de la lengua española] на [Diccionario de la lengua espanola]
+Строка c ID: 866 service_name изменен c [Diccionario panhispánico de dudas] на [Diccionario panhispanico de dudas]
+Строка c ID: 4761 service_name изменен c [Dicionário inFormal] на [Dicionario inFormal]
+Строка c ID: 4762 service_name изменен c [Dicionário Online de Português] на [Dicionario Online de PortuguГЄs]
+Строка c ID: 4763 service_name изменен c [Dicionário Priberam da Língua Portuguesa] на [Dicionario Priberam da LГ­ngua Portuguesa]
+Строка c ID: 881 service_name изменен c [Dig Lookup] на [InternetWorking]
+Строка c ID: 921НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 922 service_name изменен c [Doctrine ORM] на [Read the Docs]
+Строка c ID: 926 service_name изменен c [Dogpile Images] на [Dogpile]
+Строка c ID: 927 service_name изменен c [Dogpile Local] на [Dogpile]
+Строка c ID: 928 service_name изменен c [Dogpile News] на [Dogpile]
+Строка c ID: 929 service_name изменен c [Dogpile Video] на [Dogpile]
+Строка c ID: 930 service_name изменен c [Dogpile Web] на [Dogpile]
+Строка c ID: 963 service_name изменен c [Dragon Age NexusMods] на [NexusMods]
+Строка c ID: 4565НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 4434НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 992 service_name изменен c [DuckDuckGo Blinders] на [DuckDuckGo]
+Строка c ID: 991 service_name изменен c [DuckDuckGo Blinders] на [DuckDuckGo]
+Строка c ID: 996 service_name изменен c [DuckDuckGo in Japan] на [DuckDuckGo]
+Строка c ID: 4823 service_name изменен c [Ebay.De] на [Ebay]
+Строка c ID: 4824 service_name изменен c [Ebay.De] на [Ebay]
+Строка c ID: 4822 service_name изменен c [Ebay.De] на [Ebay]
+Строка c ID: 4826 service_name изменен c [Ebay.Fr] на [Ebay]
+Строка c ID: 4827 service_name изменен c [Ebay.Fr] на [Ebay]
+Строка c ID: 4825 service_name изменен c [Ebay.Fr] на [Ebay]
+Строка c ID: 4830 service_name изменен c [Ebay.Gr] на [Ebay]
+Строка c ID: 4828 service_name изменен c [Ebay.Gr] на [Ebay]
+Строка c ID: 4829 service_name изменен c [Ebay.Gr] на [Ebay]
+Строка c ID: 4833 service_name изменен c [Ebay.Ie] на [Ebay]
+Строка c ID: 4832 service_name изменен c [Ebay.Ie] на [Ebay]
+Строка c ID: 4835 service_name изменен c [Ebay.In] на [Ebay]
+Строка c ID: 4836 service_name изменен c [Ebay.In] на [Ebay]
+Строка c ID: 4834 service_name изменен c [Ebay.In] на [Ebay]
+Строка c ID: 4837 service_name изменен c [Ebay.It] на [Ebay]
+Строка c ID: 4839 service_name изменен c [Ebay.It] на [Ebay]
+Строка c ID: 4838 service_name изменен c [Ebay.It] на [Ebay]
+Строка c ID: 4840 service_name изменен c [Ebay.Nl] на [Ebay]
+Строка c ID: 4842 service_name изменен c [Ebay.Nl] на [Ebay]
+Строка c ID: 4844 service_name изменен c [Ebay.Ph] на [Ebay]
+Строка c ID: 4843 service_name изменен c [Ebay.Ph] на [Ebay]
+Строка c ID: 4845 service_name изменен c [Ebay.Ph] на [Ebay]
+Строка c ID: 4848 service_name изменен c [Ebay.Pl] на [Ebay]
+Строка c ID: 4846 service_name изменен c [Ebay.Pl] на [Ebay]
+Строка c ID: 4847 service_name изменен c [Ebay.Pl] на [Ebay]
+Строка c ID: 1038 service_name изменен c [Edgar] на [US Securities and Exchange Commision]
+Строка c ID: 1039 service_name изменен c [EDGAR] на [US Securities and Exchange Commision]
+Строка c ID: 4850 service_name изменен c [Ek$I Sozluk] на [Eksi Sozluk]
+Строка c ID: 4851 service_name изменен c [Eksi Sozluk] на [Eksi Sozluk]
+Строка c ID: 4852 service_name изменен c [Ekşi Sözlük] на [Eksi Sozluk]
+Строка c ID: 1086 service_name изменен c [Entrez] на [NCBI]
+Строка c ID: 4435 service_name изменен c [Examiner] на [AXS]
+Строка c ID: 1159НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 4866НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 1179НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 1183 service_name изменен c [Filmaster] на [SambaTV]
+Строка c ID: 1190НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 1191НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 1235 service_name изменен c [Floodgap Gopher] на [Le Gorafi]
+Строка c ID: 4895 service_name изменен c [Focal.ie] на [Tearma.ie]
+Строка c ID: 1280НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 4615 service_name изменен c [Futureshop] на [BestBuy]
+Строка c ID: 1313 service_name изменен c [Gaffiot latin -> français] на [Lexilogos]
+Строка c ID: 1323 service_name изменен c [GamePro] на [PCWorld]
+Строка c ID: 1397НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 1399НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 4910НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 1683НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 1780 service_name изменен c [Hoogle] на [Haskell]
+Строка c ID: 1782 service_name изменен c [Hoogle] на [Haskell]
+Строка c ID: 1781 service_name изменен c [Hoogle] на [Haskell]
+Строка c ID: 1783 service_name изменен c [Hoogle Search] на [Haskell]
+Строка c ID: 1806 service_name изменен c [Http://Filmracket.Com/] на [Filmracket.Com]
+Строка c ID: 1807 service_name изменен c [Http://Fm4.Orf.At/] на [Fm4.Orf.At]
+Строка c ID: 1808 service_name изменен c [Http://Myanimelist.Net/] на [Myanimelist.Net]
+Строка c ID: 1910НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 1913НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 1917НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 1927 service_name изменен c [iPlayer] на [BBC]
+Строка c ID: 1940 service_name изменен c [isoHunt] на [AliBaba]
+Строка c ID: 4927 service_name изменен c [IT用語辞典 e-Words] на [e-Words]
+Строка c ID: 1981 service_name изменен c [Joystiq] на [Engadget]
+Строка c ID: 2106НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 2126 service_name изменен c [Les Numériques] на [Les Numuriques]
+Строка c ID: 2223НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 4966НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 4987 service_name изменен c [LÖVE2D] на [LOVE2D]
+Строка c ID: 4990НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 4989НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 2513НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 2516 service_name изменен c [Météo-France] на [Meteo-France]
+Строка c ID: 5039 service_name изменен c [Newsweek] на [TheDailyBeast]
+Строка c ID: 5045 service_name изменен c [NHL.com] на [NHS]
+Строка c ID: 2599 service_name изменен c [NOAA] на [Weather]
+Строка c ID: 2629НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 2653 service_name изменен c [Ohloh] на [OpenHub]
+Строка c ID: 2654 service_name изменен c [Ohloh Code] на [OpenHub]
+Строка c ID: 2655 service_name изменен c [Ohloh code] на [OpenHub]
+Строка c ID: 2748НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 2769НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 2768НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 2881 service_name изменен c [Play.com] на [Rakuten]
+Строка c ID: 2882 service_name изменен c [Play.com] на [Rakuten]
+Строка c ID: 2896 service_name изменен c [Pokémon Central Wiki] на [Pokemon Central Wiki]
+Строка c ID: 2897 service_name изменен c [PokéWiki] на [PokeWiki]
+Строка c ID: 2998НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 3033НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 3047НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 3054НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 3103НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 3139 service_name изменен c [Rotten Tomato] на [Rotten Tomatoes]
+Строка c ID: 3153 service_name изменен c [RTÉ] на [RTE]
+Строка c ID: 3272НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 3271НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 3275 service_name изменен c [Seznam.cz Slovník En-Cz] на [Seznam.cz]
+Строка c ID: 3310 service_name изменен c [Site du Zéro] на [Site du ZГ©ro]
+Строка c ID: 3342 service_name изменен c [Slovenské slovníky] на [Slovensky slovi­ky]
+Строка c ID: 3341 service_name изменен c [Slovenské slovníky] на [Slovensky slovi­ky]
+Строка c ID: 3343 service_name изменен c [Slovenské slovníky] на [Slovensky slovi­ky]
+Строка c ID: 3344 service_name изменен c [Slovenské slovníky] на [Slovensky slovi­ky]
+Строка c ID: 3412НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 3439 service_name изменен c [Startpage Images] на [Startpage]
+Строка c ID: 3440 service_name изменен c [Startpage Mobile] на [Startpage]
+Строка c ID: 3441 service_name изменен c [Startpage Picture Search] на [Startpage]
+Строка c ID: 3442 service_name изменен c [StartPage safeoff eng] на [Startpage]
+Строка c ID: 3443 service_name изменен c [Startpage safeoff ita] на [Startpage]
+Строка c ID: 3444 service_name изменен c [Startpage.Com] на [Startpage]
+Строка c ID: 3445 service_name изменен c [Startpage.Com] на [Startpage]
+Строка c ID: 3486НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 3487НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 3490 service_name изменен c [Subtítulos Divx] на [Subti­tulos Divx]
+Строка c ID: 3496НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 3532НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 3619 service_name изменен c [The free dictionary ES] на [The Free Dictionary]
+Строка c ID: 3708НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 4445 service_name изменен c [Theatlantic] на [The Atlantic]
+Строка c ID: 3827НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 3852 service_name изменен c [Twitter Hashtags] на [Twitter]
+Строка c ID: 3853 service_name изменен c [Twitter users] на [Twitter]
+Строка c ID: 3879 service_name изменен c [Uitzending Gemist] на [NPO]
+Строка c ID: 3880 service_name изменен c [Uitzending Gemist] на [NPO]
+Строка c ID: 3893НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 3935 service_name изменен c [US Government Image Search] на [US Government]
+Строка c ID: 3954НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 3977 service_name изменен c [Viagogo.Co.Uk] на [Viagogo]
+Строка c ID: 3978 service_name изменен c [Viagogo.De] на [Viagogo]
+Строка c ID: 3989НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 4009НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 4451 service_name изменен c [Washingtontimes] на [Washington Times]
+Строка c ID: 4029НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 4028НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 4035НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 4036НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 4170 service_name изменен c [Wikipédia Slovenčina] на [Wikipedia Slovensina]
+Строка c ID: 4174 service_name изменен c [Wikiquote Español] на [Wikiquote Espanol]
+Строка c ID: 4271НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 4373 service_name изменен c [YouTube - long] на [YouTube]
+Строка c ID: 4382НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 4385НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 4423НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 4424НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 4425НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 4420НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 4427НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 4428НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 4429НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 4430НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 4431НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 4432НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 4421НЕ УДАЛОСЬ УДАЛИТЬ
+Строка c ID: 4422НЕ УДАЛОСЬ УДАЛИТЬ
+Disconnected from the target VM, address: '127.0.0.1:35754', transport: 'socket'
+
+Process finished with exit code 0
