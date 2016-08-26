@@ -1,10 +1,17 @@
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
+
 import java.util.*;
 
 import static java.util.Arrays.asList;
 
 public class Tests {
-
+    private static Logger LOGGER = Logger.getLogger(Tests.class);
     public static void main(String[] args) {
+        int x = 0;
+        for (int i = 0; i < 20; i++) {
+            System.out.println("Счетчик "+ x++);
+        }
         Map<Integer, String> map = new TreeMap<>();
         Integer i = 3;
         map.put(3, "hui");
@@ -15,6 +22,7 @@ public class Tests {
             System.out.println(integerStringEntry.getKey() + " "+integerStringEntry.getValue());
         }
         String s="I love this phone, its super fast and there's so much new and cool things with jelly bean....but of recently I've seen some bugs.";
+        LOGGER.info(s);
         Set<String> aa = Tests.deleteStopWords(s);
         System.out.println(aa);
         Map<String, Object> returnMap = returnMap("vasea");

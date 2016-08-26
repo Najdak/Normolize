@@ -28,5 +28,11 @@
     <orderEntry type="library" name="Maven: net.sf.flexjson:flexjson:3.3" level="project" />
     <orderEntry type="library" name="Maven: org.jsoup:jsoup:1.8.1" level="project" />
     <orderEntry type="library" name="Maven: log4j:log4j:1.2.17" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.lucene:lucene-core:3.6.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.lucene:lucene-queryparser:4.10.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.lucene:lucene-queries:4.10.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.lucene:lucene-sandbox:4.10.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.lucene:lucene-highlighter:4.10.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.lucene:lucene-memory:4.10.2" level="project" />
   </component>
 </module>
