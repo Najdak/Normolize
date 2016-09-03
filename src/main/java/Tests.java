@@ -1,6 +1,7 @@
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
+import java.lang.reflect.Array;
 import java.util.*;
 
 import static java.util.Arrays.asList;
@@ -17,6 +18,11 @@ public class Tests {
         map.put(3, "hui");
         map.put(6, "pizda");
         map.put(1, "vagaina");
+
+        List<String> list = new ArrayList<>(Arrays.asList("dasdasd", "sdasdas", "dasdasdas"));
+        for (String s : list) {
+            if (s.equals("sdasdas")) list.remove(s);
+        }
         System.out.println(map.containsKey(3));
         for (Map.Entry<Integer, String> integerStringEntry : map.entrySet()) {
             System.out.println(integerStringEntry.getKey() + " "+integerStringEntry.getValue());
